@@ -32,9 +32,9 @@ struct CloudsData parseJson(struct DataChunk oneCall)
 	// nicht elegant aber was solls - bewoelkung wird direkt ueber die position ausgelesen
 	// 1. value: 5 ist hourly data, 6 ist daily data
 	// 2. value: Zeit iterator (1 Tag oder 1 Stunde)
-	// 3. value: 0 ist timestamp (unix), bewoelkung ist [6 in hourly data] und [11 in daily data]
+	// 3. value: 0 ist timestamp (unix), bewoelkung ist [7 in hourly data] und [11 in daily data]
 
-						// 5hourly                iterator            0dt 6clouds
+						// 5hourly                iterator            0dt 7clouds
 	//value->u.object.values[5].value -> u.array.values[0] -> u.object.values[0].value->u.integer;	// hourly, 0, dt
 
 						// 6daily                  iterator            0dt 11clouds
@@ -43,8 +43,9 @@ struct CloudsData parseJson(struct DataChunk oneCall)
 	for (i = 0; i < 48; i++)
 	{
 		hourlyTimestamp[i] = value->u.object.values[5].value->u.array.values[i]->u.object.values[0].value->u.integer;
-		hourlyClouds[i] = value->u.object.values[5].value->u.array.values[i]->u.object.values[6].value->u.integer;
-	}
+		hourlyClouds[i] = value->u.object.values[5].value->u.array.values[i]->u.object.values[7].value->u.integer;
+		printf("%d\n", hourlyClouds[i]);
+}
 
 	for (i = 0; i < 7; i++)
 	{
