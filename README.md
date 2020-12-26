@@ -1,7 +1,11 @@
+
+<p style="text-align: center;">
 # jw-sol
-![LastCommit](https://img.shields.io/github/last-commit/jwieland2/jw-sol))
+![LastCommit](https://img.shields.io/github/last-commit/jwieland2/jw-sol)
 ![Badge](https://img.shields.io/badge/made%20by-jwieland2-blue.svg)
+<img src="https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"/>
 ![Photo](https://raw.githubusercontent.com/jwieland2/jw-sol/main/photo2.jpg)
+</p>
 1. Fetch weather data in json format from [https://www.openweathermap.org](openweathermap.org) One Call API using curl
 * One Call API is free to use with 1000 calls / day.
 * For regular use, please consider registering and replacing my token.
