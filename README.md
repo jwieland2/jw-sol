@@ -10,7 +10,7 @@
 Add to crontab with your desired update frequency
 
 # Details
-1. Fetch weather data in json format from [https://www.openweathermap.org](openweathermap.org) One Call API using curl
+1. Fetch weather data in json format from [openweathermap.org](https://www.openweathermap.org) One Call API using curl
 * One Call API is free to use with 1000 calls / day.
 * For regular use, please consider registering and replacing my token.
 * Hourly forecast for 48 hours, daily forecast for 7 days.
